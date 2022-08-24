@@ -2,5 +2,5 @@
 
 def pow(a, b):
     """Computes a ^ b"""
-    power = pow(a, b)
+    power = a ** b
     return (power)
