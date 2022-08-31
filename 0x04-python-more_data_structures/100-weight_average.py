@@ -1,12 +1,9 @@
 #!/usr/bin/python3
 
 def weight_average(my_list=[]):
-    if not isinstance(my_list, list) or len(my_list) == 0:
+    if my_list is None or len(my_list) == 0:
         return (0)
+    sum1 =  sum(i[0] * i[1] for i in my_list)
+    sum2 = sum(j[1] for j in my_list)
+    return (sum1/sum2)
 
-    average = 0
-    size = 0
-    for tuple in my_list:
-        average += (tup[0] * tup[1])
-        size += tup[1]
-    return (average / size)
