@@ -13,6 +13,6 @@ if __name__ == "__main__":
     elif args_count == 2:
         print("{}".format(args_list[1]))
     else:
-        for i in range(args_count):
+        for i in range(1, args_count):
             sum = int(args_list[i] + sum)
         print("{}".format(sum))
