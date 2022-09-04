@@ -7,17 +7,15 @@ if __name__ == "__main__":
     arg_count = len(sys.argv) - 1
     args_list = sys.argv
 
-    if arg_count == 0:
-        print("0 arguments.")
-
-    elif arg_count == 1:
-        print("1 argument:")
-
+    if arg_count == 1:
+        print("{} arguments.".format(arg_count - 1))
+    elif arg_count == 2:
+        print("{} argument:".format(arg_count - 1))
+        print("{}: {}".format(1, args_list[1]))
     else:
-        print("{} arguments:".format(count))
-
-    for i in range(arg_count):
-        print("{}: {}".format(i + 1, args_list[i + 1]))
+        print("{} arguments:".format(arg_count - 1))
+        for i in range(1, arg_count):
+            print("{}: {}".format(i, args_list[i]))
 
 
 
