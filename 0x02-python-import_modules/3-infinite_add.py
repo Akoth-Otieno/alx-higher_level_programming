@@ -5,7 +5,7 @@ if __name__ == "__main__":
     import sys
 
     args_count = len(sys.argv)
-    sum = 0
+    sums = 0
     for i in range(len(sys.argv) - 1):
-        sum += int(sys.argv[i + 1])
-    print("{}".format(sum))
+        sums += int(sys.argv[i + 1])
+    print("{}".format(sums))
