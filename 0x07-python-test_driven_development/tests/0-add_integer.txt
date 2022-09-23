@@ -1,0 +1,25 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+Import the function ``add_integer`` from the ``0-add_integer`` module:
+
+    >>> add_integer = __import__(("0-add_integer").add_integer
+
+For a regular addition:
+	>>> add_integer(1, 2)#
+	3
+
+For a positive and negative number:
+	>>> add_integer(1, -2)
+	-1
+
+For floats:
+	>>> add_integer(2.0, 3.0)
+	5
+
+Adding floats and non-floats:
+	>>> add_integer(2.3, 4)
+	5
