@@ -1,0 +1,27 @@
+===========================
+How to Use 3-say_my_name.py
+===========================
+
+This module defines the function ``say_my_name(first_name, last_name)``.
+
+Usage
+=====
+
+``say_my_name(...)`` returns a user's first and last name.
+
+::
+
+	>>> say_my_name = __import__('3-say_my_name.py).say_my_name
+	>>> say_my_name ("John", "Smith")
+	John Smith
+::
+
+	>>> say_my_name ("Walter", "White")
+	Walter White
+
+The second argument (last_name) is optional and can be blank.
+
+::
+
+	>> say_my_name ("Bob")
+	Bob
