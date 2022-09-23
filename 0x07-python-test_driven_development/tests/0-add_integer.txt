@@ -23,3 +23,22 @@ For floats:
 Adding floats and non-floats:
 	>>> add_integer(2.3, 4)
 	5
+
+Adding a float and a string:
+	>>> add_integer(1 + "2")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+Adding a float and a string:
+	>>> add_integer("1" + 2)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+Adding any NaN:
+	 >>> add_integer(1, float('nan'))
+	 Traceback (most recent call last):
+	 ValueError: cannot convert float NaN to integer
+
+When second argument is missing - second argument is 98 by default:
+	>>> add_integer(1)
+	99
