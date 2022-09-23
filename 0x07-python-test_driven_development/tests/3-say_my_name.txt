@@ -12,16 +12,31 @@ Usage
 ::
 
 	>>> say_my_name = __import__('3-say_my_name.py).say_my_name
-	>>> say_my_name ("John", "Smith")
+	>>> say_my_name("John", "Smith")
 	John Smith
 ::
 
-	>>> say_my_name ("Walter", "White")
+	>>> say_my_name("Walter", "White")
 	Walter White
 
 The second argument (last_name) is optional and can be blank.
 
 ::
 
-	>> say_my_name ("Bob")
+	>> say_my_name("Bob")
 	Bob
+
+The function ``say_my_name()`` expects both arguments to be strings.
+If either is not of type string, the function raises a type error.
+
+::
+
+	>>> say_my_name(12, "White")
+	Traceback (most recent call last):
+    	TypeError: first_name must be a string
+
+::
+
+	>>> say_my_name("White", 12)
+	Traceback (most recent call last):
+        TypeError: last_name must be a string
