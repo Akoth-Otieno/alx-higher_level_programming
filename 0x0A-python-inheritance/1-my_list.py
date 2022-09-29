@@ -2,10 +2,9 @@
 
 '''Define a class list.'''
 
+
 class MyList(list):
-    '''Create an instance of my list.'''
+    """ instantiate MyList"""
     def print_sorted(self):
-        """Sort list in ascending order."""
+        """sort my list"""
         print(sorted(self))
-
-
