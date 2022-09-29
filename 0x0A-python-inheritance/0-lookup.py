@@ -5,4 +5,4 @@
 
 def lookup(obj):
     '''Returns an object's attributes and methods.'''
-    return (dir(obj))    
+    return(dir(obj))
