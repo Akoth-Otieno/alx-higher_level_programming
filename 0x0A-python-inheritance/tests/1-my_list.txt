@@ -1,5 +1,6 @@
-Tests for ``my_list`` from 0-my_list.py
-========================================
+=======================
+How to Use 1-my_list.py
+=======================
 
 This module defines a class ``MyList`` that inherits from ``list``.
 
@@ -160,7 +161,7 @@ will be raised.
 
 ::
 
-    >>> my_list = MyList([1, "Betty", "Holberton", 5])
+    >>> my_list = MyList([1, "Betty", 5])
     >>> my_list.print_sorted()
     Traceback (most recent call last):
     TypeError: unorderable types: str() < int()
