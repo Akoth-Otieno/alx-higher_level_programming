@@ -2,14 +2,10 @@
 
 '''Define a class list.'''
 
-class list:
-    '''Create an instance of my list.'''
-    def __init__(self):
-        pass
-
-    def print_sorted(self):
-        print(sort(list))
-
 class MyList(list):
-    pass
+    '''Create an instance of my list.'''
+    def print_sorted(self):
+        """Sort list in ascending order."""
+        print(sorted(self))
+
 
