@@ -10,7 +10,7 @@ class MyInt(int):
         self.integer = integer
 
     def __eq__(self, rebel):
-        return self.integer != integer
+        return self.integer != rebel
 
     def __ne__(self, rebel):
-        return self.integer == integer
+        return self.integer == rebel
