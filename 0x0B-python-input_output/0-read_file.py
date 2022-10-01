@@ -5,5 +5,5 @@
 
 def read_file(filename=""):
     '''Reads a text file.'''
-    with open('workfile', encoding="utf-8") as filename:
-        read_data = filename.read()
+    with open("", encoding="utf-8") as f:
+        read_data = f.read()
