@@ -9,4 +9,4 @@ def write_file(filename="", text=""):
     with open(filename, mode="w", encoding="utf-8") as f:
         for file_line in f:
             file_line += 1
-    print(file_lines)
+    return(file_lines)
