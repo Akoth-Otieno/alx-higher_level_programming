@@ -3,9 +3,9 @@
 '''Define a class called Base'''
 
 
-Class Base:
+class Base:
     '''The base class.'''
-     __nb_instances = 0
+    __nb_instances = 0
 
     def __init__(self, id=None):
         '''class constructor.'''
