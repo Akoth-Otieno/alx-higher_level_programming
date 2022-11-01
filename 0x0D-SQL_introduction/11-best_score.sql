@@ -1,5 +1,5 @@
 -- lists all records with a score >= 10
-SELECT name, score
+SELECT score, name
  FROM second_table
  WHERE score >= 10
- ORDER BY score DESC
+ ORDER BY score DESC;
